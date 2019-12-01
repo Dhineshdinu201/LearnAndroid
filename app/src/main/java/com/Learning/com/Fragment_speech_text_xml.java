@@ -1,12 +1,16 @@
 package com.Learning.com;
 
 import android.app.ProgressDialog;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import br.tiagohm.codeview.CodeView;
@@ -123,7 +127,60 @@ public class Fragment_speech_text_xml  extends Fragment implements CodeView.OnHi
         title5.setText("Drawable/round_default.xml");
         title6=(TextView)view.findViewById(R.id.title6);
         title6.setText("Drawable/button_background.xml");
-
+        Button copy1=(Button)view.findViewById(R.id.copy1);
+        copy1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("clip", Code);
+                clipboard.setPrimaryClip(clip);
+            }
+        });
+        Button copy2=(Button)view.findViewById(R.id.copy2);
+        copy2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("clip", code2);
+                clipboard.setPrimaryClip(clip);
+            }
+        });
+        Button copy3=(Button)view.findViewById(R.id.copy3);
+        copy3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("clip", code3);
+                clipboard.setPrimaryClip(clip);
+            }
+        });
+        Button copy4=(Button)view.findViewById(R.id.copy4);
+        copy4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("clip", code4);
+                clipboard.setPrimaryClip(clip);
+            }
+        });
+        Button copy5=(Button)view.findViewById(R.id.copy5);
+        copy5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("clip", code5);
+                clipboard.setPrimaryClip(clip);
+            }
+        });
+        Button copy6=(Button)view.findViewById(R.id.copy6);
+        copy6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("clip", code6);
+                clipboard.setPrimaryClip(clip);
+            }
+        });
         mCodeView.setOnHighlightListener(this)
                 .setOnHighlightListener(this)
                 .setTheme(Theme.DARCULA)

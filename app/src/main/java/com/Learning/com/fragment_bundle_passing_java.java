@@ -1,6 +1,9 @@
 package com.Learning.com;
 
 import android.app.ProgressDialog;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -8,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.protectsoft.webviewcode.Codeview;
@@ -74,6 +78,24 @@ public class fragment_bundle_passing_java  extends Fragment {
         View view = inflater.inflate(R.layout.two_heading_codeview, container, false);
         WebView webview = (WebView)view.findViewById(R.id.webview);
         WebView webview2 = (WebView)view.findViewById(R.id.webview2);
+        Button copy1=(Button)view.findViewById(R.id.copy1);
+        copy1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("clip", Code);
+                clipboard.setPrimaryClip(clip);
+            }
+        });
+        Button copy2=(Button)view.findViewById(R.id.copy2);
+        copy2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("clip", code2);
+                clipboard.setPrimaryClip(clip);
+            }
+        });
         Title2=(TextView)view.findViewById(R.id.title2);
         Title2.setText("SecondActivity.Java");
         Codeview.with(getActivity().getApplicationContext())

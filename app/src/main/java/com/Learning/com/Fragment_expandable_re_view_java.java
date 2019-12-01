@@ -1,6 +1,9 @@
 package com.Learning.com;
 
 import android.app.ProgressDialog;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -8,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.protectsoft.webviewcode.Codeview;
@@ -444,7 +448,33 @@ public class Fragment_expandable_re_view_java  extends Fragment {
         title3.setText("PeopleAdapter.Java");
         WebView webView2=(WebView)view.findViewById(R.id.webview2);
         WebView webView3=(WebView)view.findViewById(R.id.webview3);
-
+        Button copy1=(Button)view.findViewById(R.id.copy1);
+        copy1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("clip", Code);
+                clipboard.setPrimaryClip(clip);
+            }
+        });
+        Button copy2=(Button)view.findViewById(R.id.copy2);
+        copy2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("clip", Code2);
+                clipboard.setPrimaryClip(clip);
+            }
+        });
+        Button copy3=(Button)view.findViewById(R.id.copy3);
+        copy3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("clip", Code3);
+                clipboard.setPrimaryClip(clip);
+            }
+        });
 
         Codeview.with(getActivity().getApplicationContext())
                 .withCode(Code)

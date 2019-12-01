@@ -1,12 +1,16 @@
 package com.Learning.com;
 
 import android.app.ProgressDialog;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import br.tiagohm.codeview.CodeView;
 import br.tiagohm.codeview.Language;
@@ -37,7 +41,15 @@ public class Fragment_qrscanner_xml extends Fragment implements CodeView.OnHighl
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstancetate) {
         View view = inflater.inflate(R.layout.one_heading_codeview_xml, container, false);
         mCodeView = (CodeView)view.findViewById(R.id.codeView);
-
+        Button copy=(Button)view.findViewById(R.id.copy);
+        copy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("clip", Code);
+                clipboard.setPrimaryClip(clip);
+            }
+        });
         mCodeView.setOnHighlightListener(this)
                 .setOnHighlightListener(this)
                 .setTheme(Theme.DARCULA)
