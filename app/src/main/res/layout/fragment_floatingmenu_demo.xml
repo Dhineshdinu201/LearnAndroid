@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="100dp"
+    android:weightSum="2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"/>
+    </LinearLayout>
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:padding="11dp"
+        app:layout_anchorGravity="bottom|end"
+        app:menu_animationDelayPerItem="55"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="@android:color/holo_red_dark"
+        app:menu_colorPressed="@android:color/holo_red_light"
+        app:menu_colorRipple="@android:color/holo_red_light"
+        app:menu_fab_size="normal"
+        app:menu_icon="@drawable/menu"
+        app:menu_labels_colorNormal="#333"
+        app:menu_labels_colorPressed="#444"
+        app:menu_labels_textColor="@android:color/white"
+        app:menu_labels_textSize="15sp"
+        app:fab_label="Select Lab"
+        >
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow"
+            android:background="@android:color/holo_green_dark"
+            android:tint="@android:color/holo_green_dark"
+            app:fab_label="btn2" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:src="@drawable/arrow"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            app:fab_label="btn3" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow"
+            app:fab_label="btn4" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/b5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow"
+            app:fab_label="btn5" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</android.support.design.widget.CoordinatorLayout>

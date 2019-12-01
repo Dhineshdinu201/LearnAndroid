@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.master.glideimageview.GlideImageView
+        android:id="@+id/glide_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:error_res="@drawable/no_image"
+        app:placeholder_res="@mipmap/ic_launcher"
+        style="?android:attr/progressBarStyleSmall"
+        app:show_progress="false" />
+</LinearLayout>

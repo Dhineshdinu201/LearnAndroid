@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaseScreen">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <TextView
+
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                style="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+           </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+   <fragment
+       android:id="@+id/fragment"
+       android:layout_width="match_parent"
+       android:name="com.Learning.com.Fragment_dummy"
+       android:layout_height="match_parent"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:padding="11dp"
+        app:layout_anchorGravity="bottom|end"
+        app:menu_animationDelayPerItem="55"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="@android:color/holo_red_dark"
+        app:menu_colorPressed="@android:color/holo_red_light"
+        app:menu_colorRipple="@android:color/holo_red_light"
+        app:menu_fab_size="normal"
+        app:menu_icon="@drawable/menu"
+        app:menu_labels_colorNormal="#333"
+        app:menu_labels_colorPressed="#444"
+        app:menu_labels_textColor="@android:color/white"
+        app:menu_labels_textSize="15sp"
+        app:fab_label="Select Lab"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/demo"
+            android:background="@android:color/transparent"
+            app:fab_label="Demo"
+            app:fabSize="mini"/>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:src="@drawable/java"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            app:fab_label="Java"
+            app:fabSize="mini"/>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/xml"
+            app:fab_label="XML"
+            app:fabSize="mini"/>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/b5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ref"
+            app:fab_label="Reference"
+            app:fabSize="mini"/>
+    </com.github.clans.fab.FloatingActionMenu>
+
+</android.support.design.widget.CoordinatorLayout>

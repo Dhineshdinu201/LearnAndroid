@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Introduction">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LEARN ANDROID"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/text"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/icon"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Introduction"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  The Application in which it divides into three consecutive parts . They are,"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="5dp"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/text1"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  The above menus in which it divides into four submenus. They are,"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text2"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  The reference contains the reference about the modules . This part answers about  "
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:id="@+id/text3"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  The xml contains the design files with their name used in reference module.
+The Java menu contains the java code of the demo module.
+The ultimate demo screen will provide demo view of the widgets.
+"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basic"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  As the name implies , This part contains simple android widgets and  views . These will be mostly very helpful while building application"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Advance"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  This part which contains some advanced and customised modules. This section in which it helps you to learn some of the most important thing in android you will need when creating an application."
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Implementation"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Implementation is also known as library , In Which it will implements the additional library for add on features . This will be helpful for coding simplification , better design and also in better performance."
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Introduction To Android"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Android is a mobile operating system developed by Google. It is based on a modified version of the Linux kernel and other open source software, and is designed primarily for touch screen mobile devices such as smart phones and tablets."
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Components"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  App components are the essential building blocks of an Android app. Each component is an entry point through which the system or a user can enter your app. Some components depend on others.
+There are four different types of app components:
+"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text4"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_gravity="left"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Each type serves a distinct purpose and has a distinct lifecycle that defines how the component is created and destroyed. The following sections describe the four types of app components."
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activities"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  An activity is the entry point for interacting with the user. It represents a single screen with a user interface. For example, an email app might have one activity that shows a list of new emails, another activity to compose an email, and another activity for reading emails. Although the activities work together to form a cohesive user experience in the email app, each one is independent of the others. As such, a different app can start any one of these activities if the email app allows it. For example, a camera app can start the activity in the email app that composes new mail to allow the user to share a picture. An activity facilitates the following key interactions between system and app:"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Each type serves a distinct purpose and has a distinct lifecycle that defines how the component is created and destroyed. The following sections describe the four types of app components."
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_activity"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_services"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Broadcast receivers"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  A broadcast receiver is a component that enables the system to deliver events to the app outside of a regular user flow, allowing the app to respond to system-wide broadcast announcements. Because broadcast receivers are another well-defined entry into the app, the system can deliver broadcasts even to apps that aren't currently running. So, for example, an app can schedule an alarm to post a notification to tell the user about an upcoming event... and by delivering that alarm to a Broadcast Receiver of the app, there is no need for the app to remain running until the alarm goes off. Many broadcasts originate from the system—for example, a broadcast announcing that the screen has turned off, the battery is low, or a picture was captured. Apps can also initiate broadcasts—for example, to let other apps know that some data has been downloaded to the device and is available for them to use. Although broadcast receivers don't display a user interface, they may create a status bar notification to alert the user when a broadcast event occurs. More commonly, though, a broadcast receiver is just a gateway to other components and is intended to do a very minimal amount of work. For instance, it might schedule a Job Service to perform some work based on the event with JobScheduler
+A broadcast receiver is implemented as a subclass of Broadcast Receiver and each broadcast is delivered as an Intent object. For more information, see the Broadcast Receiver class.
+"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Content providers"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cp"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
